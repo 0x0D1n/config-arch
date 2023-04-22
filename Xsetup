@@ -1,0 +1,10 @@
+#!/bin/sh
+# sddm configuration located at: /usr/share/sddm/scripts/Xsetup
+# Xsetup - run as root before the login dialog appears
+
+# https://www.dedoimedo.com/computers/plasma-hd-uhd-scaling-sddm-login-screen.html
+# Scale down 4k resolution to make text bigger in SDDM
+xrandr --output eDP-1 --mode 1920x1200 --rate 59.88
+
+# Swiss french keyboard layout
+setxkbmap -layout ch -variant fr
